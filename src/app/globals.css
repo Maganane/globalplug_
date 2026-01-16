@@ -1,29 +1,36 @@
 :root {
   /* Brand Colors */
-  --rwanda-sky-blue: #00A1DE;
+  --deep-navy: #1B3C53;
+  --ocean-blue: #234C6A;
+  --steel-blue: #456882;
+  --sand-beige: #D2C1B6;
+
+  /* Legacy/Utility Colors */
   --tech-charcoal: #2D3436;
-  --growth-green: #27AE60;
-  --sunburst-yellow: #F9A826;
-  --hillscape-olive: #8E9F6E;
-  --cool-grey: #F5F7FA;
   --clean-white: #FFFFFF;
 
   /* Functional Mappings */
   --background: var(--clean-white);
-  --foreground: var(--tech-charcoal);
-  --primary: var(--rwanda-sky-blue);
-  --action: var(--growth-green);
-  --highlight: var(--sunburst-yellow);
+  --foreground: var(--deep-navy);
+  --primary: var(--deep-navy);
+  --action: var(--ocean-blue);
+  --highlight: var(--steel-blue);
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background-color removed - handled by BackgroundSlider */
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-poppins), sans-serif;
   color: var(--tech-charcoal);
 }

@@ -1,11 +1,15 @@
 .footer {
-  background-color: var(--tech-charcoal);
-  color: #a0a0a0;
+  background-color: var(--deep-navy);
+  position: relative;
+  overflow: hidden;
+  color: #e0e0e0;
   padding: 60px 0 30px;
   font-size: 0.95rem;
 }
 
 .container {
+  position: relative;
+  z-index: 2;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;

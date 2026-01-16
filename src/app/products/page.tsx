@@ -64,7 +64,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Badges Section */}
-      <section className={styles.categorySection} style={{ backgroundColor: '#f9f9f9' }}>
+      <section className={styles.categorySection}>
         <h2 className={styles.categoryTitle}>Intelligent Badges</h2>
         <div className={styles.productGrid}>
           {/* Product 3 */}
@@ -83,8 +83,8 @@ export default function ProductsPage() {
             </div>
           </div>
 
-           {/* Product 4 */}
-           <div className={styles.productCard}>
+          {/* Product 4 */}
+          <div className={styles.productCard}>
             <div className={styles.imagePlaceholder}>Staff ID Image</div>
             <div className={styles.cardContent}>
               <h3 className={styles.productName}>Secure Access ID</h3>
@@ -102,7 +102,7 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className={styles.header} style={{ background: 'var(--clean-white)' }}>
+      <section className={styles.header}>
         <h2 className={styles.title} style={{ fontSize: '2rem' }}>Need a Custom Solution?</h2>
         <p className={styles.subtitle} style={{ marginBottom: '30px' }}>
           We can embed NFC chips into almost any physical product. Let's talk about your idea.

@@ -1,10 +1,14 @@
-﻿import React from 'react';
+﻿'use client';
+
+import React from 'react';
 import Link from 'next/link';
 import styles from './Footer.module.css';
+import PatternSlider from './PatternSlider';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <PatternSlider opacity={0.08} scale={2} speed={20} />
       <div className={styles.container}>
         {/* Contact Info */}
         <div className={styles.column}>

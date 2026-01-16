@@ -1,13 +1,13 @@
 .container {
   min-height: 100vh;
-  background-color: var(--clean-white);
+  /* background-color removed */
   padding-top: 80px;
 }
 
 .header {
   padding: 80px 5%;
   text-align: center;
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  /* background removed */
 }
 
 .title {
@@ -43,17 +43,20 @@
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: white;
+  background: rgba(255, 255, 255, 0.85);
+  /* Semi-transparent for readability */
+  backdrop-filter: blur(5px);
 }
 
 .productCard:hover {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
 
 .imagePlaceholder {
   height: 250px;
-  background-color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.03);
+  /* Almost transparent to show patterns */
   display: flex;
   align-items: center;
   justify-content: center;

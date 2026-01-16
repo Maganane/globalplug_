@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -62,10 +62,10 @@ export default function Home() {
       <section className={styles.demoSection}>
         <h2 className={styles.sectionTitle}>Experience the Magic</h2>
         <p>Tap the button below to simulate an NFC interaction.</p>
-        
+
         <div className={styles.demoContainer}>
           {!demoActive ? (
-            <button 
+            <button
               className={styles.tapTrigger}
               onClick={() => setDemoActive(true)}
             >
@@ -73,10 +73,15 @@ export default function Home() {
             </button>
           ) : (
             <div className={`${styles.demoContent} ${demoActive ? styles.active : ''}`}>
-              <h3>🚀 Welcome!</h3>
-              <p>This is where your client lands instantly after tapping your product.</p>
-              <br/>
-              <Button onClick={() => setDemoActive(false)} variant="secondary">
+              <video
+                src="/videos/global-plug-demo.mp4"
+                className={styles.demoVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+              <Button onClick={() => setDemoActive(false)} variant="secondary" className={styles.resetButton}>
                 Reset Demo
               </Button>
             </div>

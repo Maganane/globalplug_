@@ -19,75 +19,91 @@ export default function CaseStudiesPage() {
       <section className={styles.casesSection}>
         {/* Case Study 1 */}
         <article className={styles.caseStudy}>
-          <div className={styles.caseImage}>Kigali Tech Summit Photo</div>
+          <div className={styles.caseImage}>
+            <img src="/images/cases/mwc-kigali.jpg" alt="MWC Kigali 2025" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
           <div className={styles.caseContent}>
-            <span className={styles.clientName}>Kigali Tech Summit 2024</span>
-            <h2 className={styles.caseTitle}>Streamlining Event Access</h2>
-            
+            <span className={styles.clientName}>GSMA & MWC Kigali 2025</span>
+            <h2 className={styles.caseTitle}>Fast-Tracking Africa's Digital Transformation</h2>
+
             <div className={styles.caseDetails}>
               <div className={styles.detailSection}>
-                <span className={styles.detailLabel}>Challenge:</span>
-                <p className={styles.detailText}>Long queues at registration and paper agendas that were discarded immediately.</p>
+                <span className={styles.detailLabel}>The Challenge:</span>
+                <p className={styles.detailText}>
+                  "Policy Reform Key to Fast-Tracking Africa’s Digital Transformation." With thousands of delegates and policymakers, seamless information sharing and networking is critical to driving the agenda forward efficiently.
+                </p>
               </div>
               <div className={styles.detailSection}>
-                <span className={styles.detailLabel}>Solution:</span>
-                <p className={styles.detailText}>NFC-enabled silicone wristbands that served as entry tickets and linked to a live digital agenda.</p>
+                <span className={styles.detailLabel}>Global Plug Solution:</span>
+                <p className={styles.detailText}>
+                  NFC-enabled smart badges that allow delegates to instantly exchange contact info and access key policy documents with a single tap, eliminating friction and fostering real-time collaboration.
+                </p>
               </div>
             </div>
 
             <div className={styles.results}>
-              <span className={styles.detailLabel}>Key Result:</span>
-              <p className={styles.detailText}>Reduced check-in time by 70% and generated 5,000+ digital agenda views.</p>
+              <span className={styles.detailLabel}>Potential Impact:</span>
+              <p className={styles.detailText}>Streamlined access for attendees and enhanced high-level policy connections without the need for physical business cards or flyers.</p>
             </div>
           </div>
         </article>
 
         {/* Case Study 2 */}
         <article className={styles.caseStudy}>
-          <div className={styles.caseImage}>EcoBank Promo Photo</div>
+          <div className={styles.caseImage}>
+            <img src="/images/cases/bk-campaign.jpg" alt="Bank of Kigali Campaign" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
           <div className={styles.caseContent}>
             <span className={styles.clientName}>Bank of Kigali (Campaign)</span>
             <h2 className={styles.caseTitle}>Modernizing Corporate Gifts</h2>
-            
+
             <div className={styles.caseDetails}>
               <div className={styles.detailSection}>
-                <span className={styles.detailLabel}>Challenge:</span>
-                <p className={styles.detailText}>Traditional year-end diaries were seen as "generic" and lacked digital conversion tracking.</p>
+                <span className={styles.detailLabel}>The Challenge:</span>
+                <p className={styles.detailText}>Traditional year-end diaries were seen as "generic" and lacked digital conversion tracking, failing to engage the modern, tech-savvy banking client.</p>
               </div>
               <div className={styles.detailSection}>
-                <span className={styles.detailLabel}>Solution:</span>
-                <p className={styles.detailText}>Premium leather journals with an embedded NFC chip linking to a personalized CEO video message.</p>
+                <span className={styles.detailLabel}>Global Plug Solution:</span>
+                <p className={styles.detailText}>
+                  Premium leather journals embedded with NFC chips that link directly to a personalized video message from the CEO or a digital financial report, turning a static gift into an active communication channel.
+                </p>
               </div>
             </div>
 
             <div className={styles.results}>
-              <span className={styles.detailLabel}>Key Result:</span>
-              <p className={styles.detailText}>Achieved a 45% engagement rate (scan-to-gift ratio), highest in their campaign history.</p>
+              <span className={styles.detailLabel}>Potential Impact:</span>
+              <p className={styles.detailText}>Significant increase in client engagement (scan-to-gift ratio) and real-time data on campaign effectiveness.</p>
             </div>
           </div>
         </article>
 
         {/* Case Study 3 */}
         <article className={styles.caseStudy}>
-          <div className={styles.caseImage}>StartUp Rwanda Photo</div>
+          <div className={styles.caseImage}>
+            <img src="/images/cases/youth-connekt.jpg" alt="YouthConnekt Africa 2023" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
           <div className={styles.caseContent}>
-            <span className={styles.clientName}>Rwanda Innovation Fund</span>
-            <h2 className={styles.caseTitle}>Networking Made Simple</h2>
-            
+            <span className={styles.clientName}>YouthConnekt Africa 2023</span>
+            <h2 className={styles.caseTitle}>Connecting Africa's Youth</h2>
+
             <div className={styles.caseDetails}>
               <div className={styles.detailSection}>
-                <span className={styles.detailLabel}>Challenge:</span>
-                <p className={styles.detailText}>Founders struggled to share portfolios and pitch decks quickly during speed networking.</p>
+                <span className={styles.detailLabel}>The Challenge:</span>
+                <p className={styles.detailText}>
+                  Connecting thousands of young innovators and leaders across the continent in a meaningful way, where exchanging physical contacts is slow, inefficient, and often leads to lost connections.
+                </p>
               </div>
               <div className={styles.detailSection}>
-                <span className={styles.detailLabel}>Solution:</span>
-                <p className={styles.detailText}>Smart metal business cards that instantly transfer contact info and deck links with a tap.</p>
+                <span className={styles.detailLabel}>Global Plug Solution:</span>
+                <p className={styles.detailText}>
+                  Smart wristbands or biodegradable eco-badges that allow attendees to tap-and-connect, instantly sharing portfolios, project links, and social profiles to foster long-term cross-border collaboration.
+                </p>
               </div>
             </div>
 
             <div className={styles.results}>
-              <span className={styles.detailLabel}>Key Result:</span>
-              <p className={styles.detailText}>Facilitated over 1,200 connections in a single afternoon.</p>
+              <span className={styles.detailLabel}>Potential Impact:</span>
+              <p className={styles.detailText}>Facilitating thousands of digital connections per hour and creating a lasting digital ecosystem for Africa's youth leaders.</p>
             </div>
           </div>
         </article>

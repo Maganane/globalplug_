@@ -3,47 +3,83 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--deep-navy);
+  /* Base color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  /* Fixed height for consistency */
+  overflow: hidden;
+  /* Contain the slider */
 }
 
+/* Ensure content sits on top of the slider */
 .container {
-  width: 90%;
+  position: relative;
+  z-index: 2;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-family: var(--font-poppins);
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--primary);
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.logoImage {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  /* Ensure logo looks good against dark background */
+  /* filter: brightness(0) invert(1);Removed to show original logo colors */
 }
 
 .navLinks {
   display: flex;
-  gap: 32px;
   align-items: center;
+  gap: 32px;
 }
 
 .link {
   font-weight: 500;
-  color: var(--tech-charcoal);
-  transition: color 0.2s;
+  color: var(--clean-white);
+  /* White text */
+  transition: all 0.2s ease;
   font-size: 0.95rem;
+  text-transform: capitalize;
+  /* Cleaner look */
+  padding: 8px 0;
+  position: relative;
+  font-family: var(--font-kanit), sans-serif;
 }
 
 .link:hover {
-  color: var(--primary);
+  color: var(--sand-beige);
+  /* Highlight color on hover */
+  opacity: 1;
+}
+
+/* Add an underline effect or similar for active/hover state if needed */
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--sand-beige);
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .mobileMenuBtn {
@@ -65,7 +101,7 @@
   gap: 24px;
   border-bottom: 1px solid #eee;
   display: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .mobileMenu.open {
@@ -76,7 +112,7 @@
   .navLinks {
     display: none;
   }
-  
+
   .mobileMenuBtn {
     display: block;
   }

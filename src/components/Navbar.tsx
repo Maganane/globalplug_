@@ -1,9 +1,10 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 import Button from './Button';
+import PatternSlider from './PatternSlider';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,10 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
+      <PatternSlider opacity={0.1} scale={1.5} speed={15} />
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          Global Plug
+          <img src="/images/logo.png" alt="Global Plug" className={styles.logoImage} />
         </Link>
 
         {/* Desktop Menu */}

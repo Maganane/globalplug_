@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
@@ -10,16 +10,24 @@ export default function BusinessPage() {
       <Navbar />
 
       <header className={styles.header}>
-        <h1 className={styles.headerTitle}>For Businesses</h1>
-        <p className={styles.headerSubtitle}>
-          Modernize your corporate engagement with smart, NFC-enabled products that bridge the physical and digital worlds.
-        </p>
+        {/* Fading Background Images */}
+        <div className={styles.backgroundContainer}>
+          <div className={styles.backgroundImage} style={{ backgroundImage: "url('/images/business/image1.jpg')", animationDelay: '0s' }}></div>
+          <div className={styles.backgroundImage} style={{ backgroundImage: "url('/images/business/image2.jpg')", animationDelay: '5s' }}></div>
+        </div>
+
+        <div className={styles.contentWrapper}>
+          <h1 className={styles.headerTitle}>For Businesses</h1>
+          <p className={styles.headerSubtitle}>
+            Modernize your corporate engagement with smart, NFC-enabled products that bridge the physical and digital worlds.
+          </p>
+        </div>
       </header>
 
       <section className={styles.roiSection}>
         <h2 className={styles.sectionTitle}>Why Go Smart?</h2>
         <p className={styles.sectionSubtitle}>Maximize your Return on Engagement (ROE).</p>
-        
+
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>
             <div className={styles.statNumber}>3x</div>
@@ -86,7 +94,7 @@ export default function BusinessPage() {
         <h2 className={styles.ctaTitle}>Ready to Innovate?</h2>
         <Button href="/contact" variant="primary">Request a Consultation</Button>
       </section>
-      
+
       <Footer />
     </main>
   );

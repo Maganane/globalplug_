@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Kanit } from "next/font/google";
 import "./globals.css";
+import BackgroundSlider from "@/components/BackgroundSlider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,10 +9,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const poppins = Poppins({
+const kanit = Kanit({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-kanit",
   display: "swap",
 });
 
@@ -27,7 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable}`}>
+      <body className={`${inter.variable} ${kanit.variable}`}>
+        <BackgroundSlider />
         {children}
       </body>
     </html>

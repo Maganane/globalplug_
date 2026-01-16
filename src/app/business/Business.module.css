@@ -5,11 +5,65 @@
 }
 
 /* Header */
+/* Header */
 .header {
+  position: relative;
   background: var(--tech-charcoal);
   color: white;
-  padding: 80px 5%;
+  padding: 120px 5%;
   text-align: center;
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeLoop 10s infinite;
+}
+
+@keyframes fadeLoop {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  /* Adjusted opacity for visibility */
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
 }
 
 .headerTitle {
@@ -54,7 +108,7 @@
   background: white;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .statNumber {
@@ -91,7 +145,7 @@
 
 .caseCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .caseContent {
