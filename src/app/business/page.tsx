@@ -32,17 +32,17 @@ export default function BusinessPage() {
           <div className={styles.statCard}>
             <div className={styles.statNumber}>3x</div>
             <div className={styles.statLabel}>Higher Engagement</div>
-            <p>Compared to traditional paper interactions.</p>
+            <p>From static paper to interactive digital experiences.</p>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statNumber}>100%</div>
             <div className={styles.statLabel}>Trackable</div>
-            <p>Measure taps and conversions in real-time.</p>
+            <p>Measure offline marketing with real-time analytics.</p>
           </div>
           <div className={styles.statCard}>
             <div className={styles.statNumber}>0</div>
-            <div className={styles.statLabel}>App Required</div>
-            <p>Works natively on all modern smartphones.</p>
+            <div className={styles.statLabel}>Lost Contacts</div>
+            <p>Directly save details to phones. No more lost business cards.</p>
           </div>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function BusinessPage() {
 
           <div className={styles.caseCard}>
             <div className={styles.caseContent}>
-              <h3 className={styles.caseTitle}>Trade Shows</h3>
+              <h3 className={styles.caseTitle}>Modern Networking</h3>
               <p className={styles.caseText}>
                 Stand out with smart business cards that instantly save your contact info to a lead's phone.
               </p>

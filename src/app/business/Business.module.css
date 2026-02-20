@@ -140,12 +140,18 @@
   border: 1px solid #eee;
   border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s ease;
 }
 
 .caseCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background-color: var(--ocean-blue);
+}
+
+.caseCard:hover .caseTitle,
+.caseCard:hover .caseText {
+  color: white;
 }
 
 .caseContent {
@@ -156,11 +162,13 @@
   font-size: 1.5rem;
   margin-bottom: 16px;
   color: var(--tech-charcoal);
+  transition: color 0.3s ease;
 }
 
 .caseText {
   color: #555;
   line-height: 1.6;
+  transition: color 0.3s ease;
 }
 
 /* CTA */

@@ -16,36 +16,32 @@ export default function ProductsPage() {
         </p>
       </header>
 
-      {/* Bracelets Section */}
+      {/* Wearables Section */}
       <section className={styles.categorySection}>
-        <h2 className={styles.categoryTitle}>Smart Bracelets</h2>
+        <h2 className={styles.categoryTitle}>Wearables</h2>
         <div className={styles.productGrid}>
-          {/* Product 1 */}
+          {/* Smart Wristbands */}
           <div className={styles.productCard}>
-            <div className={styles.imagePlaceholder}>Silicone Wristband Image</div>
+            <div className={styles.imagePlaceholder}>Smart Wristband Image</div>
             <div className={styles.cardContent}>
-              <h3 className={styles.productName}>Event Pro Band</h3>
+              <h3 className={styles.productName}>Smart Wristbands</h3>
               <div className={styles.colorOptions}>
                 <div className={styles.colorDot} style={{ background: '#00A1DE' }}></div>
                 <div className={styles.colorDot} style={{ background: '#2D3436' }}></div>
                 <div className={styles.colorDot} style={{ background: '#FF4D4D' }}></div>
               </div>
               <p className={styles.productDesc}>
-                Durable silicone wristbands perfect for festivals, conferences, and access control. Waterproof and tear-resistant.
+                Durable silicone wristbands for festivals, conferences, and access control. Waterproof and tear-resistant.
               </p>
-              <div className={styles.features}>
-                <span className={styles.featureTag}>Waterproof</span>
-                <span className={styles.featureTag}>Custom Print</span>
-              </div>
               <Button variant="outline" className="w-full mt-4">Configure</Button>
             </div>
           </div>
 
-          {/* Product 2 */}
+          {/* Smart Bracelets */}
           <div className={styles.productCard}>
-            <div className={styles.imagePlaceholder}>Fabric Wristband Image</div>
+            <div className={styles.imagePlaceholder}>Smart Bracelet Image</div>
             <div className={styles.cardContent}>
-              <h3 className={styles.productName}>Eco-Fabric Weaver</h3>
+              <h3 className={styles.productName}>Smart Bracelets</h3>
               <div className={styles.colorOptions}>
                 <div className={styles.colorDot} style={{ background: '#8E9F6E' }}></div>
                 <div className={styles.colorDot} style={{ background: '#F9A826' }}></div>
@@ -53,48 +49,90 @@ export default function ProductsPage() {
               <p className={styles.productDesc}>
                 Sustainable woven fabric bands with a bamboo slider. Ideal for eco-conscious brands and VIP events.
               </p>
-              <div className={styles.features}>
-                <span className={styles.featureTag}>Eco-Friendly</span>
-                <span className={styles.featureTag}>Premium Feel</span>
-              </div>
               <Button variant="outline" className="w-full mt-4">Configure</Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Badges Section */}
+      {/* Cards & Badges Section */}
       <section className={styles.categorySection}>
-        <h2 className={styles.categoryTitle}>Intelligent Badges</h2>
+        <h2 className={styles.categoryTitle}>Cards & Badges</h2>
         <div className={styles.productGrid}>
-          {/* Product 3 */}
+          {/* Smart Business Cards */}
           <div className={styles.productCard}>
-            <div className={styles.imagePlaceholder}>PVC Card Image</div>
+            <div className={styles.imagePlaceholder}>Smart Business Card Image</div>
             <div className={styles.cardContent}>
-              <h3 className={styles.productName}>Connect Card</h3>
+              <h3 className={styles.productName}>Smart Business Cards</h3>
               <p className={styles.productDesc}>
                 The last business card you'll ever need. Tap to share contacts, portfolio, or social media instantly.
               </p>
-              <div className={styles.features}>
-                <span className={styles.featureTag}>PVC / Metal</span>
-                <span className={styles.featureTag}>QR Code Backup</span>
-              </div>
               <Button variant="outline" className="w-full mt-4">Configure</Button>
             </div>
           </div>
 
-          {/* Product 4 */}
+          {/* Smart Badges */}
           <div className={styles.productCard}>
-            <div className={styles.imagePlaceholder}>Staff ID Image</div>
+            <div className={styles.imagePlaceholder}>Smart Badge Image</div>
             <div className={styles.cardContent}>
-              <h3 className={styles.productName}>Secure Access ID</h3>
+              <h3 className={styles.productName}>Smart Badges</h3>
               <p className={styles.productDesc}>
                 Employee ID badges that double as access keys and digital verification profiles.
               </p>
-              <div className={styles.features}>
-                <span className={styles.featureTag}>Secure Chip</span>
-                <span className={styles.featureTag}>Photo ID</span>
-              </div>
+              <Button variant="outline" className="w-full mt-4">Configure</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Office & Marketing Section */}
+      <section className={styles.categorySection}>
+        <h2 className={styles.categoryTitle}>Office & Marketing</h2>
+        <div className={styles.productGrid}>
+          {/* Smart Notebooks */}
+          <div className={styles.productCard}>
+            <div className={styles.imagePlaceholder}>Smart Notebook Image</div>
+            <div className={styles.cardContent}>
+              <h3 className={styles.productName}>Smart Notebooks</h3>
+              <p className={styles.productDesc}>
+                Premium journals with embedded NFC to link to digital notes, cloud storage, or company portals.
+              </p>
+              <Button variant="outline" className="w-full mt-4">Configure</Button>
+            </div>
+          </div>
+
+          {/* Smart Pens */}
+          <div className={styles.productCard}>
+            <div className={styles.imagePlaceholder}>Smart Pen Image</div>
+            <div className={styles.cardContent}>
+              <h3 className={styles.productName}>Smart Pens</h3>
+              <p className={styles.productDesc}>
+                High-quality writing instruments with a digital twist. Tap to share your info over a handshake.
+              </p>
+              <Button variant="outline" className="w-full mt-4">Configure</Button>
+            </div>
+          </div>
+
+          {/* Smart Magnetic Tags */}
+          <div className={styles.productCard}>
+            <div className={styles.imagePlaceholder}>Smart Tag Image</div>
+            <div className={styles.cardContent}>
+              <h3 className={styles.productName}>Smart Magnetic Tags</h3>
+              <p className={styles.productDesc}>
+                Versatile tags for inventory tracking, asset management, or interactive displays.
+              </p>
+              <Button variant="outline" className="w-full mt-4">Configure</Button>
+            </div>
+          </div>
+
+          {/* Smart Posters */}
+          <div className={styles.productCard}>
+            <div className={styles.imagePlaceholder}>Smart Poster Image</div>
+            <div className={styles.cardContent}>
+              <h3 className={styles.productName}>Smart Posters</h3>
+              <p className={styles.productDesc}>
+                Interactive marketing posters. Tap to watch trailers, get coupons, or view event details.
+              </p>
               <Button variant="outline" className="w-full mt-4">Configure</Button>
             </div>
           </div>

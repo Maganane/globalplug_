@@ -13,9 +13,18 @@ const Footer = () => {
         {/* Contact Info */}
         <div className={styles.column}>
           <h3>Contact Us</h3>
-          <p>KK [Your Street], Kigali, Rwanda</p>
-          <p>Phone: +250 XXX XXX XXX</p>
-          <p>Email: hello@globalplug.rw</p>
+          <div className={styles.contactDetails}>
+            <div className={styles.mainInfo}>
+              <p>Kigali, Rwanda</p>
+              <p>T: +250 787401292</p>
+              <p>Email: <a href="mailto:plug@wegetyoupluged.com">plug@wegetyoupluged.com</a></p>
+            </div>
+
+            <div className={styles.supportInfo}>
+              <p>Need help? contact:</p>
+              <a href="mailto:support@globalplug.com">support@globalplug.com</a>
+            </div>
+          </div>
         </div>
 
         {/* Quick Links */}
@@ -43,7 +52,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        &copy; {new Date().getFullYear()} Global Plug. Proudly built in Rwanda.
+        &copy; {new Date().getFullYear()} GLOBAL PLUG. All Rights Reserved.
       </div>
     </footer>
   );

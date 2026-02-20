@@ -30,7 +30,18 @@ const PatternSlider: React.FC<PatternSliderProps> = ({
     }, [speed]);
 
     return (
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                overflow: 'hidden',
+                pointerEvents: 'none',
+                zIndex: 0
+            }}
+        >
             {patterns.map((pattern, index) => (
                 <div
                     key={pattern}
@@ -38,8 +49,8 @@ const PatternSlider: React.FC<PatternSliderProps> = ({
                     style={{
                         backgroundImage: `url(${pattern})`,
                         backgroundRepeat: 'repeat',
-                        backgroundSize: `${150 * scale}px`, // Zoomed in effect
-                        opacity: index === currentIndex ? opacity : 0,
+                        backgroundSize: `${100 * scale}px`, // Zoomed in effect but smaller base
+                        opacity: index === currentIndex ? 0.05 : 0, // Force subtle opacity
                         animation: index === currentIndex ? `slideBackground ${speed + 1}s linear infinite` : 'none',
                     }}
                 />

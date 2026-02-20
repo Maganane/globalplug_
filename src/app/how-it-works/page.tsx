@@ -33,9 +33,9 @@ export default function HowItWorksPage() {
         <div className={styles.step}>
           <div className={styles.stepNumber}>2</div>
           <div className={styles.stepContent}>
-            <h3 className={styles.stepTitle}>Link Configuration</h3>
+            <h3 className={styles.stepTitle}>Design & Configure</h3>
             <p className={styles.stepText}>
-              Tell us where you want the tap to lead—your website, a signup form, a video, or a digital business card. We encode the chips securely.
+              You choose: design the products yourself or let our team handle it. Configure your links securely on our dashboard, or we can set them up for you.
             </p>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function HowItWorksPage() {
       <section className={styles.faqSection}>
         <div className={styles.faqContainer}>
           <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
-          
+
           <div className={styles.faqItem}>
             <div className={styles.question}>Do users need an app to scan?</div>
             <div className={styles.answer}>
@@ -84,7 +84,7 @@ export default function HowItWorksPage() {
               For custom branded items, our MOQ starts at 50 units. For unbranded or sample kits, you can order as few as 1.
             </div>
           </div>
-          
+
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
             <p style={{ marginBottom: '20px' }}>Still have questions?</p>
             <Button href="/contact" variant="secondary">Contact Support</Button>

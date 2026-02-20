@@ -80,16 +80,16 @@ export default function ContactPage() {
           <div className={styles.infoCard}>
             <h3 className={styles.infoTitle}>Visit Our Office</h3>
             <p className={styles.infoText}>
-              <strong>Global Plug HQ</strong><br/>
-              KK [Your Street]<br/>
-              Kigali, Rwanda
+              <strong>Global Plug HQ</strong><br />
+              Kigali Heights, Floor 3<br />
+              KG 7 Ave, Kigali
             </p>
             <p className={styles.infoText}>
-              <strong>Hours:</strong><br/>
+              <strong>Hours:</strong><br />
               Mon - Fri: 8am - 5pm
             </p>
             <p className={styles.infoText}>
-              <strong>Email:</strong><br/>
+              <strong>Email:</strong><br />
               hello@globalplug.rw
             </p>
           </div>

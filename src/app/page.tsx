@@ -18,14 +18,14 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            Turn Everyday Items into <span>Digital Gateways</span>
+            Engage at the <span>Speed of a Tap</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Global Plug embeds NFC technology into custom products, giving Rwandan businesses a smart, tangible touchpoint to instantly connect with their audience.
           </p>
           <div className={styles.ctaGroup}>
-            <Button href="/products">Explore Our Smart Products</Button>
-            <Button href="/contact" variant="outline">Request a Demo</Button>
+            <Button href="/products">View Products</Button>
+            <Button href="/contact" variant="outline">Request a Quote</Button>
           </div>
         </div>
       </section>
@@ -43,9 +43,9 @@ export default function Home() {
           </div>
           <div className={styles.solutionCard}>
             <div className={styles.iconWrapper}>2</div>
-            <h3 className={styles.cardTitle}>We Design & Embed</h3>
+            <h3 className={styles.cardTitle}>Design & Configure</h3>
             <p className={styles.cardText}>
-              We program the NFC chips and integrate them into high-quality bracelets, badges, or journals.
+              Choose to design the products yourself or let us handle it. Configure your links securely.
             </p>
           </div>
           <div className={styles.solutionCard}>

@@ -13,10 +13,10 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <PatternSlider opacity={0.1} scale={1.5} speed={15} />
+
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <img src="/images/logo.png" alt="Global Plug" className={styles.logoImage} />
+          <img src="/images/logo1.png" alt="Global Plug" className={styles.logoImage} />
         </Link>
 
         {/* Desktop Menu */}
@@ -26,6 +26,9 @@ const Navbar = () => {
           <Link href="/products" className={styles.link}>Products</Link>
           <Link href="/how-it-works" className={styles.link}>How It Works</Link>
           <Link href="/case-studies" className={styles.link}>Case Studies</Link>
+        </div>
+
+        <div className={styles.desktopCTA}>
           <Button href="/contact" variant="primary">Get a Quote</Button>
         </div>
 

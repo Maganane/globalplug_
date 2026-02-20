@@ -75,12 +75,23 @@
   border-radius: 16px;
   background: white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   border: 1px solid #f0f0f0;
 }
 
 .solutionCard:hover {
   transform: translateY(-10px);
+  background-color: var(--ocean-blue);
+}
+
+.solutionCard:hover .cardTitle,
+.solutionCard:hover .cardText {
+  color: white;
+}
+
+.solutionCard:hover .iconWrapper {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .iconWrapper {
@@ -95,16 +106,19 @@
   color: var(--sunburst-yellow);
   font-size: 2rem;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .cardTitle {
   font-size: 1.5rem;
   margin-bottom: 16px;
+  transition: color 0.3s ease;
 }
 
 .cardText {
   color: #666;
   line-height: 1.6;
+  transition: color 0.3s ease;
 }
 
 /* NFC Demo Section */

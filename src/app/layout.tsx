@@ -18,7 +18,8 @@ const kanit = Kanit({
 
 export const metadata: Metadata = {
   title: "Global Plug | Smart NFC Products",
-  description: "Turn everyday items into digital gateways with Global Plug's custom NFC solutions.",
+  description: "Engage at the speed of a tap. Global Plug embeds NFC technology into custom products for seamless, instant, and tangible connectivity.",
+  keywords: "Smart, Seamless, Instant, Connectivity, Embedded, Interactive, Tangible, NFC, Rwanda",
 };
 
 export default function RootLayout({

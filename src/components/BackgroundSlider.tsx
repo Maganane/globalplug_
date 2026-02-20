@@ -32,25 +32,49 @@ export default function BackgroundSlider() {
     }, [currentIndex]);
 
     return (
-        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none bg-white">
+        <div
+            style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                zIndex: -1,
+                overflow: 'hidden',
+                pointerEvents: 'none',
+                backgroundColor: 'white'
+            }}
+        >
             {/* Current Background - Stays until animation completes */}
             <div
-                className="absolute inset-0 opacity-[0.8] transition-transform duration-1000 ease-in-out"
                 style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    opacity: 0.03, /* Subtle background */
+                    transition: 'transform 1000ms ease-in-out',
                     backgroundImage: `url(${backgrounds[currentIndex]})`,
                     backgroundRepeat: 'repeat',
-                    backgroundSize: '300px', // Sized down pattern
+                    backgroundSize: '100px', /* Smaller clusters */
                     transform: isAnimating ? 'translateX(100%)' : 'translateX(0)', // Slide out to right
                 }}
             />
 
             {/* Next Background - Slides in from left */}
             <div
-                className="absolute inset-0 opacity-[0.8] transition-transform duration-1000 ease-in-out"
                 style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    opacity: 0.03, /* Subtle background */
+                    transition: 'transform 1000ms ease-in-out',
                     backgroundImage: `url(${backgrounds[(currentIndex + 1) % backgrounds.length]})`,
                     backgroundRepeat: 'repeat',
-                    backgroundSize: '300px',
+                    backgroundSize: '100px',
                     transform: isAnimating ? 'translateX(0)' : 'translateX(-100%)', // Slide in from left
                     zIndex: isAnimating ? 1 : 0
                 }}

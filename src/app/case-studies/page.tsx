@@ -12,7 +12,7 @@ export default function CaseStudiesPage() {
       <header className={styles.header}>
         <h1 className={styles.title}>Success Stories</h1>
         <p className={styles.subtitle}>
-          See how leading Rwandan companies are using Global Plug to drive engagement and modernize their brand.
+          See how leading Rwandan organizations are leveraging Global Plug's smart technology to drive engagement and modernize their brand presence.
         </p>
       </header>
 

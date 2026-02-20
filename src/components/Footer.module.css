@@ -64,3 +64,36 @@
   text-align: center;
   font-size: 0.9rem;
 }
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mainInfo p {
+  margin-bottom: 8px !important;
+}
+
+.mainInfo a,
+.supportInfo a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mainInfo a:hover,
+.supportInfo a:hover {
+  color: var(--sunburst-yellow);
+}
+
+.supportInfo p {
+  font-weight: 500;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 4px !important;
+}
+
+.supportInfo a {
+  font-size: 0.9rem;
+}
