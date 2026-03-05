@@ -10,12 +10,22 @@ import Button from '../components/Button';
 export default function Home() {
   const [demoActive, setDemoActive] = useState(false);
   const [scrollProgress, setScrollProgress] = useState({ arrow1: 0, arrow2: 0 });
+  const [pageScrolled, setPageScrolled] = useState(false);
+  const [landingComplete, setLandingComplete] = useState(false);
   const aboutRef = useRef<HTMLDivElement>(null);
   const missionRef = useRef<HTMLDivElement>(null);
   const visionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      const scrollY = window.scrollY;
+      
+      // Landing animation trigger
+      if (scrollY > 100 && !pageScrolled) {
+        setPageScrolled(true);
+        setTimeout(() => setLandingComplete(true), 800); // Match animation duration
+      }
+
       if (!aboutRef.current || !missionRef.current || !visionRef.current) return;
 
       const aboutRect = aboutRef.current.getBoundingClientRect();
@@ -40,27 +50,53 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial call
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pageScrolled]);
 
   return (
     <main className={styles.container}>
-      <Navbar />
-
-      {/* Hero Section */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>
-            Engage at the <span>Speed of a Tap</span>
-          </h1>
-          <p className={styles.heroSubtitle}>
-            Global Plug embeds NFC technology into custom products, giving Rwandan businesses a smart, tangible touchpoint to instantly connect with their audience.
-          </p>
-          <div className={styles.ctaGroup}>
-            <Button href="/products">View Products</Button>
-            <Button href="/contact" variant="outline">Request a Quote</Button>
+      {/* Landing Page */}
+      <section className={`${styles.landingPage} ${pageScrolled ? styles.scrolledAway : ''}`}>
+        <div className={styles.landingContent}>
+          <img 
+            src="/images/logo1.png" 
+            alt="Global Plug" 
+            className={`${styles.landingLogo} ${pageScrolled ? styles.animateToNav : ''}`}
+          />
+          <h1 className={styles.landingTitle}>Global Plug</h1>
+          <p className={styles.landingSubtext}>Now that you&apos;re here...</p>
+          
+          {/* Scroll Indicator */}
+          <div className={styles.scrollIndicator}>
+            <span className={styles.scrollText}>Scroll to explore</span>
+            <div className={styles.scrollIcon}>
+              <svg width="30" height="50" viewBox="0 0 30 50">
+                <rect x="5" y="5" width="20" height="35" rx="10" stroke="currentColor" strokeWidth="2" fill="none" />
+                <circle className={styles.scrollDot} cx="15" cy="15" r="3" fill="currentColor" />
+              </svg>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Main Content - Hidden until scroll */}
+      <div className={`${styles.mainContent} ${landingComplete ? styles.visible : ''}`}>
+        <Navbar />
+
+        {/* Hero Section */}
+        <section className={styles.hero}>
+          <div className={styles.heroContent}>
+            <h1 className={styles.heroTitle}>
+              Engage at the <span>Speed of a Tap</span>
+            </h1>
+            <p className={styles.heroSubtitle}>
+              Global Plug embeds NFC technology into custom products, giving Rwandan businesses a smart, tangible touchpoint to instantly connect with their audience.
+            </p>
+            <div className={styles.ctaGroup}>
+              <Button href="/products">View Products</Button>
+              <Button href="/contact" variant="outline">Request a Quote</Button>
+            </div>
+          </div>
+        </section>
 
       {/* About, Mission, Vision Section */}
       <section className={styles.aboutSection}>
@@ -241,6 +277,7 @@ export default function Home() {
       </section>
 
       <Footer />
+      </div>
     </main>
   );
 }
